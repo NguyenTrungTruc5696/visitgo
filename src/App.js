@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Header, Component } from 'react';
 
 import './App.css';
 
