@@ -26,12 +26,12 @@ class Header extends React.Component {
                 SUGGESTIONS
                 </NavItem>
 
-              <NavDropdown eventKey={3} title="DANH MỤC" id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1}></MenuItem>
-                <MenuItem eventKey={3.2}></MenuItem>
-                <MenuItem eventKey={3.3}></MenuItem>
+              <NavDropdown eventKey={3} title="MENU" id="basic-nav-dropdown">
+                <MenuItem eventKey={3.1}>COUNTRIES</MenuItem>
+                <MenuItem eventKey={3.2}>TRANSPORT</MenuItem>
+                <MenuItem eventKey={3.3}>SCHEDULE</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={3.3}></MenuItem>
+                <MenuItem eventKey={3.3}>ADD</MenuItem>
               </NavDropdown>
 
               <form className="nav navbar-form navbar-right">
