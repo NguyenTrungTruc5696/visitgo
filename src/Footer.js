@@ -6,7 +6,7 @@ class Footer extends React.Component {
     render() {
         return (
             <div>
-                <Panel onClick={handleClick}>
+                <Panel >
                     <Panel.Body>Basic panel example</Panel.Body>
                 </Panel>
             </div>

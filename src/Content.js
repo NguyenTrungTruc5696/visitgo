@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid} from 'react-bootstrap';
+import {Grid,Row,Col} from 'react-bootstrap';
 
 class Content extends React.Component {
     render() {
