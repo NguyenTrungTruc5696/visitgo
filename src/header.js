@@ -1,63 +1,44 @@
 import React from 'react';
+import {Nav, Navbar, NavDropdown, NavItem, MenuItem} from 'react-bootstrap'
+
  
 class Header extends React.Component {
     render() {
         return (
             <div>
-                const dummySentences = [
-  'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-  'Donec hendrerit tempor tellus.',
-  'Donec pretium posuere tellus.',
-  'Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.',
-  'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-  'Nulla posuere.',
-  'Donec vitae dolor.',
-  'Nullam tristique diam non turpis.',
-  'Cras placerat accumsan nulla.',
-  'Nullam rutrum.',
-  'Nam vestibulum accumsan nisl.'
-];
-
-const gridInstance = (
-  <Grid>
-    <Row className="show-grid">
-      <Col sm={6} md={3}>
-        <code>
-          &lt;
-          {'Col sm={6} md={3}'} /&gt;
-        </code>
-        <br />
-        {dummySentences.slice(0, 6).join(' ')}
-      </Col>
-      <Col sm={6} md={3}>
-        <code>
-          &lt;
-          {'Col sm={6} md={3}'} /&gt;
-        </code>
-        <br />
-        {dummySentences.slice(0, 4).join(' ')}
-      </Col>
-      <Col sm={6} md={3}>
-        <code>
-          &lt;
-          {'Col sm={6} md={3}'} /&gt;
-        </code>
-        <br />
-        {dummySentences.slice(0, 6).join(' ')}
-      </Col>
-      <Col sm={6} md={3}>
-        <code>
-          &lt;
-          {'Col sm={6} md={3}'} /&gt;
-        </code>
-        <br />
-        {dummySentences.slice(0, 2).join(' ')}
-      </Col>
-    </Row>
-  </Grid>
-);
-
-render(gridInstance);
+               <Navbar inverse collapseOnSelect>
+  <Navbar.Header>
+    <Navbar.Brand>
+      <a href="#brand">React-Bootstrap</a>
+    </Navbar.Brand>
+    <Navbar.Toggle />
+  </Navbar.Header>
+  <Navbar.Collapse>
+    <Nav>
+      <NavItem eventKey={1} href="#">
+        Link
+      </NavItem>
+      <NavItem eventKey={2} href="#">
+        Link
+      </NavItem>
+      <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+        <MenuItem eventKey={3.1}>Action</MenuItem>
+        <MenuItem eventKey={3.2}>Another action</MenuItem>
+        <MenuItem eventKey={3.3}>Something else here</MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey={3.3}>Separated link</MenuItem>
+      </NavDropdown>
+    </Nav>
+    <Nav pullRight>
+      <NavItem eventKey={1} href="#">
+        Link Right
+      </NavItem>
+      <NavItem eventKey={2} href="#">
+        Link Right
+      </NavItem>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>;
             </div>
         )
     }
