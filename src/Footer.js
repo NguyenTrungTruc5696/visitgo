@@ -1,9 +1,15 @@
 import React from 'react';
 
+import {Panel} from 'react-bootstrap'
+
 class Footer extends React.Component {
     render() {
         return (
-            <div></div>
+            <div>
+                <Panel onClick={handleClick}>
+                    <Panel.Body>Basic panel example</Panel.Body>
+                </Panel>
+            </div>
         )
     }
 }
