@@ -11,7 +11,7 @@ const Router = () => (
     <Suspense fallback={<div>Loading...</div>}>
       <Switch>
         <Route exact path="/" component={HomePage}/>
-        <Route path="/about" component={AboutPage}/>
+        <Route path="/gioi-thieu" component={AboutPage}/>
       </Switch>
     </Suspense>
   </BrowserRouter>
