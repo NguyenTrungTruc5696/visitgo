@@ -18,7 +18,7 @@ class Content extends React.Component {
           ];
         return (
             <div>
-                <pan>Hello</pan>
+                <span>Hello</span>
                 <Grid>
     <Row className="show-grid">
       <Col sm={6} md={3}>

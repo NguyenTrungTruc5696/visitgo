@@ -9,7 +9,9 @@ class Page extends React.Component {
         return (
             <div>
                 <Header></Header>
-                <Content></Content>
+                <Content content = {this.props.content}>
+                
+                </Content>
                 <Footer></Footer>
             </div>
         )

@@ -3,6 +3,15 @@ import { Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'react-bootstrap'
 
 
 class Header extends React.Component {
+  onClickHandle(e){
+   
+    alert("Hi");
+
+  }
+  onKeyUpHandle(e){
+   
+     alert("There");
+  }
   render() {
     return (
       <div>
@@ -20,7 +29,7 @@ class Header extends React.Component {
              </NavItem>
               <NavItem eventKey={2} href="#">
                 ABOUT
-      </NavItem>
+              </NavItem>
 
               <NavItem eventKey={2} href="#">
                 SUGGESTIONS
@@ -34,16 +43,20 @@ class Header extends React.Component {
                 <MenuItem eventKey={3.3}>ADD</MenuItem>
               </NavDropdown>
 
-              <form className="nav navbar-form navbar-right">
+ <NavItem eventKey={6}>
+                
+              
+              <form name="test" activekey="test" className="nav navbar-form navbar-right">
                 <div className="input-group">
-                  <input type="text" class="form-control" placeholder="Search" aria-label="Search" />
+                  <input type="text" className="form-control" placeholder="Search" aria-label="Search" />
                   <div className="input-group-btn">
-                    <button className="btn btn-default" type="submit">
+                    <button className="btn btn-default" type="submit" onClick={this.onClickHandle.bind(this)} onKeyUp={this.onKeyUpHandle.bind(this)}>
                       <i className="fa fa-search"></i>
                     </button>
                   </div>
                 </div>
               </form>
+              </NavItem>
             </Nav>
             <Nav pullRight>
               <NavItem eventKey={1} href="#">
