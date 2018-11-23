@@ -3,10 +3,15 @@ import Page from '../Page';
 
 class AboutPage extends React.Component {
     render() {
-        
+        const _content = [];
+        _content.push (
+            <div key = "test">Giới Thiệu</div>
+        )
         return ( 
         <div>
-            <Page content= "Gioi thieu"></Page>
+            <Page content={_content}>
+
+            </Page>
         </div>
         )
     }
