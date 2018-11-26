@@ -1,3 +1,4 @@
+.navbar-default .navbar-brand { color: #eeefeb};
 body {
   margin: 0;
   padding: 0;
@@ -19,3 +20,11 @@ code {
   background-image: none;
   color : #000000;
 }
+
+.navbar-default .navbar-nav>li>a {
+  color: #eeefeb;
+}
+.dropdown-menu>li>a {
+  color: #eeefeb;
+  background-color:#2196f3;
+  }

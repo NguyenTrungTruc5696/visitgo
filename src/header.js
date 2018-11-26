@@ -24,18 +24,18 @@ class Header extends React.Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="#">
+              <NavItem eventKey={1} href="/">
                 HOME
              </NavItem>
-              <NavItem eventKey={2} href="#">
+              <NavItem eventKey={2} href="/about">
                 ABOUT
               </NavItem>
 
-              <NavItem eventKey={2} href="#">
+              <NavItem eventKey={2} href="/suggestions">
                 SUGGESTIONS
                 </NavItem>
 
-              <NavDropdown eventKey={3} title="MENU" id="basic-nav-dropdown">
+              <NavDropdown eventKey={3} title="ADD" id="basic-nav-dropdown">
                 <MenuItem eventKey={3.1}>COUNTRIES</MenuItem>
                 <MenuItem eventKey={3.2}>TRANSPORT</MenuItem>
                 <MenuItem eventKey={3.3}>SCHEDULE</MenuItem>
@@ -59,7 +59,7 @@ class Header extends React.Component {
               </NavItem>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href="#">
+              <NavItem eventKey={1} href="/signin">
                 SIGN IN
       </NavItem>
               <NavItem eventKey={2} href="#">
