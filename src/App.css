@@ -30,3 +30,8 @@
     transform: rotate(360deg);
   }
 }
+.navbar-brand{
+  font-size: 25px;
+  color:pink !important;
+  font-family: Ranga;
+}

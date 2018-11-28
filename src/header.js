@@ -43,22 +43,24 @@ class Header extends React.Component {
                 <MenuItem eventKey={3.3}>ADD</MenuItem>
               </NavDropdown>
 
- <NavItem eventKey={6}>
+
+            </Nav>
+            
+            <Nav pullRight>
+            <NavItem eventKey={6}>
                 
               
-              <form name="test" activekey="test" className="nav navbar-form navbar-right">
-                <div className="input-group">
-                  <input type="text" className="form-control" placeholder="Search" aria-label="Search" />
-                  <div className="input-group-btn">
-                    <button className="btn btn-default" type="submit" onClick={this.onClickHandle.bind(this)} onKeyUp={this.onKeyUpHandle.bind(this)}>
-                      <i className="fa fa-search"></i>
-                    </button>
+                <form name="test" activekey="test" className="nav navbar-form navbar-right">
+                  <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Search" aria-label="Search" />
+                    <div className="input-group-btn">
+                      <button className="btn btn-default" type="submit" onClick={this.onClickHandle.bind(this)} onKeyUp={this.onKeyUpHandle.bind(this)}>
+                        <i className="fa fa-search"></i>
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </form>
-              </NavItem>
-            </Nav>
-            <Nav pullRight>
+                </form>
+                </NavItem>
               <NavItem eventKey={1} href="/signin">
                 SIGN IN
       </NavItem>
