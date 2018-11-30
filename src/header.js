@@ -18,7 +18,7 @@ class Header extends React.Component {
         <Navbar collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#brand">VISITGO</a>
+              <a href="#brand">VISITGO VN</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
