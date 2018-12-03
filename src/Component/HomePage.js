@@ -7,6 +7,7 @@ class HomePage extends React.Component {
         return ( 
         <div>
             <Page content="Trang chu"></Page>
+
         </div>
         )
     }

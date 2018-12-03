@@ -4,10 +4,11 @@ class Content extends React.Component {
     render() {
       
         return (
-            <div>
+             <div>
                {this.props.content}
             </div>
         )
     }
 }
 export default Content;
+
