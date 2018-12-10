@@ -1,19 +1,32 @@
 let _data = [
     {
-        suggestions_name: "san pham 1",
-        suggestions_descript :"san pham 1"
+        suggestions_name: "KOREA",
+        suggestions_descript :"Music heaven"
     },
     {
-        suggestions_name: "san pham 2",
-        suggestions_descript :"san pham 2"  
+        suggestions_name: "CANADA",
+        suggestions_descript :"Culture and life"  
     },
     {
-        suggestions_name: "san pham 3",
-        suggestions_descript :"san pham 3"
+        suggestions_name: "CHINA",
+        suggestions_descript :"Heritage and cuisine"
+    },
+    {   
+        suggestions_name: "THAILAND",
+        suggestions_descript :"Shopping heaven"
+
     },
     {
-        suggestions_name: "san pham 4",
-        suggestions_descript :"san pham 4"
+        suggestions_name: "TAIWAN",
+        suggestions_descript :"Cultural history"
+    },
+    {
+        suggestions_name: "SINGAPORE",
+        suggestions_descript :"Island of life"
+    },
+    {
+        suggestions_name: "JAPAN",
+        suggestions_descript :"Kingdom of the sun"
     }
 ];
 module.exports = {
