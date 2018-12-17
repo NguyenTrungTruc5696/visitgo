@@ -35,3 +35,26 @@
   color:pink !important;
   font-family: Ranga;
 }
+.navbar .container {
+  padding-top: 15px;
+}
+.search-form > a {
+  padding-top: 0 !important;
+}
+.suggestion-item button{
+  margin-top: 5px;
+}
+.suggestion-item  img {
+  height: 200px;
+  width: 100%;
+}
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'react-bootstrap'
-
+import Login from './Pages/Login';
 
 class Header extends React.Component {
   onClickHandle(e){
@@ -44,20 +44,18 @@ class Header extends React.Component {
             </Nav>
             
             <Nav pullRight>
-            <NavItem eventKey={6}>
-                
-              
-                <form name="test" activekey="test" className="nav navbar-form navbar-right">
-                  <div className="input-group">
-                    <input type="text" className="form-control" placeholder="Where are you going" aria-label="Search" />
-                    <div className="input-group-btn">
-                      <button className="btn btn-default" type="submit" onClick={this.onClickHandle.bind(this)} onKeyUp={this.onKeyUpHandle.bind(this)}>
-                        <i className="fa fa-search"></i>
-                      </button>
+            <NavItem eventKey={6} className="search-form">
+              <Navbar.Form>
+                    <div className="input-group">
+                      <input type="text" className="form-control" placeholder="Where are you going" aria-label="Search" />
+                      <div className="input-group-btn">
+                        <button className="btn btn-default" type="submit" onClick={this.onClickHandle.bind(this)} onKeyUp={this.onKeyUpHandle.bind(this)}>
+                          <i className="fa fa-search"></i>
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                </form>
-                </NavItem>
+                    </Navbar.Form>
+                  </NavItem>
               <NavItem eventKey={1} href="/signin">
                 SIGN IN
       </NavItem>

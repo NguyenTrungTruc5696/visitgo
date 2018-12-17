@@ -1,9 +1,9 @@
 import React from 'react';
-import Page from './Page';
+import Page from '../Component/Page';
 import Data from '../Data';
-import Suggestion from './Suggestion';
+import Suggestion from '../Component/Suggestion';
 import { Grid, Row, Col } from 'react-bootstrap';
-import Nav from './Nav';
+import Nav from '../Component/Nav';
 
 class SuggestionPage extends React.Component {
     constructor(props) {

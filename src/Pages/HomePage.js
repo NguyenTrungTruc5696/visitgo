@@ -1,6 +1,7 @@
 import React from 'react';
-import Page from '../Page';
+import Page from '../Component/Page';
 import { Carousel } from 'react-bootstrap';
+
 class HomePage extends React.Component {
     constructor(props) { 
         super(props);
@@ -10,7 +11,7 @@ class HomePage extends React.Component {
         let _contnent = [];
 
         _contnent.push(
-            <Carousel>
+            <Carousel key="home">
                 <Carousel.Item>
                     <img width={2200} height={5} alt="2200x20" src="image/trang chu.jpg" />
                     <Carousel.Caption>
@@ -45,7 +46,6 @@ class HomePage extends React.Component {
         return (
             <div>
                 <Page content={this.state.content}></Page>
-
             </div>
         )
     }
