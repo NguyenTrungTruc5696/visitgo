@@ -1,22 +1,9 @@
-import React from 'react';
-import Page from '../Component/Page';
-
-class SignInPage extends React.Component {
-    render() {
-        const _content = [];
-        _content.push (
-            <div key = "test">Đăng nhập</div>
-        )
-        return 
-    }
-}
-export default SignInPage;
-
 import React from "react";
+import Page from '../Component/Page';
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-import "./Login.css";
+import  "./SignIn.css";
 
-export default class Login extends Component {
+class SignIn extends React.Component {
   constructor(props) {
     super(props);
 
@@ -40,10 +27,11 @@ export default class Login extends Component {
     event.preventDefault();
   }
 
-  render() {
-    return (
-      <div className="Login">
-        <form onSubmit={this.handleSubmit}>
+  buildContent() {
+    let content = [];
+
+    content.push(
+      <form onSubmit={this.handleSubmit} key={1}>
           <FormGroup controlId="email" bsSize="large">
             <ControlLabel>Email</ControlLabel>
             <FormControl
@@ -61,16 +49,29 @@ export default class Login extends Component {
               type="password"
             />
           </FormGroup>
-          <Button
+          <Button color ="blue"
             block
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
           >
-            Login
+            SignIn
           </Button>
         </form>
+    )
+
+    return content;
+  }
+
+  render() {
+    return (
+      <div className="SignIn">
+            <Page content={this.buildContent()}></Page>
+            
+        
       </div>
     );
   }
 }
+export default SignIn;
+

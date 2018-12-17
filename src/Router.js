@@ -6,6 +6,7 @@ import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import SuggestionPage from './Pages/SuggestionPage';
 import SignInPage from './Pages/SignInPage';
+import SignUpPage from './Pages/SignUpPage';
 
 const Router = () => (
 
@@ -16,7 +17,7 @@ const Router = () => (
         <Route path="/about" component={AboutPage}/>
         <Route path="/suggestions" component={SuggestionPage}/>
         <Route path="/signin" component={SignInPage}/>
-        <Route path="/login" component={Login}/>
+        <Route path="/" component={SignUpPage}/>
       </Switch>
     </Suspense>
   </BrowserRouter>

@@ -37,7 +37,7 @@ class SuggestionPage extends React.Component {
 
         return (
             <div className="suggestions_name">
-                <Page _content={this.state.content}></Page>
+                <Page content={this.state.content}></Page>
             </div>
         )
     }

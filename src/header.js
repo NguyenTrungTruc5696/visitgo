@@ -1,6 +1,5 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown, NavItem, MenuItem } from 'react-bootstrap'
-import Login from './Pages/Login';
 
 class Header extends React.Component {
   onClickHandle(e){
@@ -59,7 +58,7 @@ class Header extends React.Component {
               <NavItem eventKey={1} href="/signin">
                 SIGN IN
       </NavItem>
-              <NavItem eventKey={2} href="#">
+              <NavItem eventKey={2} href="/">
                 SIGN UP
       </NavItem>
             </Nav>
