@@ -32,9 +32,9 @@ class Header extends React.Component {
                 </NavItem>
 
               <NavDropdown eventKey={3} title="ADD" id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1}>COUNTRIES</MenuItem>
-                <MenuItem eventKey={3.2}>TRANSPORT</MenuItem>
-                <MenuItem eventKey={3.3}>SCHEDULE</MenuItem>
+                <MenuItem eventKey={3.1} href="/signin">COUNTRIES</MenuItem>
+                <MenuItem eventKey={3.2} href="/signin">TRANSPORT</MenuItem>
+                <MenuItem eventKey={3.3} href="/signin">SCHEDULE</MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={3.3}>ADD</MenuItem>
               </NavDropdown>
@@ -58,7 +58,7 @@ class Header extends React.Component {
               <NavItem eventKey={1} href="/signin">
                 SIGN IN
       </NavItem>
-              <NavItem eventKey={2} href="/">
+              <NavItem eventKey={2} href="/signup">
                 SIGN UP
       </NavItem>
             </Nav>

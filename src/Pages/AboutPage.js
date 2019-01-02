@@ -5,7 +5,7 @@ class AboutPage extends React.Component {
     render() {
         const _content = [];
         _content.push (
-            <div key = "test">Giới Thiệu</div>
+            <div key = "test">Introduce</div>
         )
         return ( 
         <div>
