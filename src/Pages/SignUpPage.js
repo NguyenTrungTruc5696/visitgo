@@ -8,14 +8,17 @@ class SignUp extends React.Component {
     super(props);
       
           this.state = {
-            lastname: "",
-            firstname: "",
+           last: "",
+           first: "",            
             email: "",
             password: ""
+            
           };
         }
+      
+       
         validateForm() {
-            return this.state.lastname.length > 0 && this.state.firstname.length > 0;
+          return this.state.last.length > 0 && this.state.first.length > 0;
           }
         
           handleChange = event => {
@@ -32,88 +35,74 @@ class SignUp extends React.Component {
             let content = [];
         
             content.push(
-              <form onSubmit={this.handleSubmit} key={2}>
-                  <FormGroup controlId="lastname" bsSize="large">
-                    <ControlLabel>Lastname</ControlLabel>
+              <div style={{paddingBottom:"120px"}}>
+              <form s onSubmit={this.handleSubmit} key={1}>
+                  <FormGroup controlId="last" bsSize="large">
+                    <ControlLabel>LastName</ControlLabel>
                     <FormControl
                       autoFocus
-                      type="lastname"
-                      value={this.state.lastname}
+                      type="last"
+                      value={this.state.email}
                       onChange={this.handleChange}
                     />
                   </FormGroup>
-                  <FormGroup controlId="firstname" bsSize="large">
-                    <ControlLabel>Firstname</ControlLabel>
+                  <FormGroup controlId="first" bsSize="large">
+                    <ControlLabel>FirstName</ControlLabel>
                     <FormControl
-                      value={this.state.firstname}
+                      value={this.state.password}
                       onChange={this.handleChange}
-                      type="firstname"
+                      type="first"
                     />
-         /></form>           
-        validateForm() {
-         this.state.email.length > 0 && this.state.password.length > 0;
-        }
-      
-        handleChange = event => {
-          this.setState({
-            [event.target.id]: event.target.value
-          });
-        }
-      
-        handleSubmit = event => {
-          event.preventDefault();
-        }
-      
-        buildContent() {
-          let content = [];
-      
-          content.push(
-            <form onSubmit={this.handleSubmit} key={1}>
-                <FormGroup controlId="email" bsSize="large">
-                  <ControlLabel>Email</ControlLabel>
-                  <FormControl
-                    autoFocus
-                    type="email"
-                    value={this.state.email}
-                    onChange={this.handleChange}
-                  />
-                </FormGroup>
-                <FormGroup controlId="password" bsSize="large">
-                  <ControlLabel>Password</ControlLabel>
-                  <FormControl
-                    value={this.state.password}
-                    onChange={this.handleChange}
-                    type="password"
-                  />
-                </FormGroup>
-                <Button color ="blue"
-                  block
-                  bsSize="large"
-                  disabled={!this.validateForm()}
-                  type="submit"
-                >
-                  SignUp
-                </Button>
-            
-                <Button>Sign in FACEBOOK</Button>
-              </form>
+                  </FormGroup>
+                </form>
+                <h5>* Please consider your email is also the username.</h5>
+
+                <form onSubmit={this.handleSubmit} key={2}>
+                  <FormGroup controlId="email" bsSize="large">
+                    <ControlLabel>Email</ControlLabel>
+                    <FormControl
+                      autoFocus
+                      type="email"
+                      value={this.state.email}
+                      onChange={this.handleChange}
+                    />
+                  </FormGroup>
+                  <FormGroup controlId="password" bsSize="large">
+                    <ControlLabel>Password</ControlLabel>
+                    <FormControl
+                      value={this.state.password}
+                      onChange={this.handleChange}
+                      type="password"
+                    />
+                  </FormGroup>
+                  <h5>By creating an account you agree to VISITGO VN's <span style={{color:"green"}}>Terms of Service.</span></h5>
+                  <Button color ="blue"
+                    block
+                    bsSize="large"
+                    disabled={!this.validateForm()}
+                    type="submit"
+                  >
+                    CREATE ACCOUNT
+                  </Button>
+              <div></div>
+                  <Button >Sign in FACEBOOK</Button>
+                
+                </form>
+          </div>
+            )
         
-          )
-      
-          return content;
+            return content;
+          }
+        
+          render() {
+            return (
+              <div className="SignUp">
+                    <Page content={this.buildContent()}></Page>
+              </div>
+            );
+          }
         }
       
-        render() {
-          return (
-            <div className="SignUp">
-                  <Page content={this.buildContent()}></Page>
-                  
-              
-            </div>
-            
-          );
-        }
-      }
 export default SignUp;
 
 

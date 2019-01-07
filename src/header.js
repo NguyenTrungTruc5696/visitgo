@@ -48,7 +48,7 @@ class Header extends React.Component {
                     <div className="input-group">
                       <input type="text" className="form-control" placeholder="Where are you going" aria-label="Search" />
                       <div className="input-group-btn">
-                        <button className="btn btn-default" type="submit" onClick={this.onClickHandle.bind(this)} onKeyUp={this.onKeyUpHandle.bind(this)}>
+                        <button className="btn btn-default1" type="submit" onClick={this.onClickHandle.bind(this)} onKeyUp={this.onKeyUpHandle.bind(this)}>
                           <i className="fa fa-search"></i>
                         </button>
                       </div>

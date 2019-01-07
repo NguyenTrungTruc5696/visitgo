@@ -31,7 +31,7 @@ class SignIn extends React.Component {
     let content = [];
 
     content.push(
-      <form onSubmit={this.handleSubmit} key={1}>
+      <form  onSubmit={this.handleSubmit} key={1}>
           <FormGroup controlId="email" bsSize="large">
             <ControlLabel>Email</ControlLabel>
             <FormControl
@@ -49,15 +49,23 @@ class SignIn extends React.Component {
               type="password"
             />
           </FormGroup>
+
+        <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1"></input>
+        <label class="custom-control-label" for="customCheck1"><h5>Remember me</h5></label>
+        </div>
+
           <Button color ="blue"
             block
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
           >
-            SignIn
+            Sign In
           </Button>
+          
         </form>
+        
     )
 
     return content;

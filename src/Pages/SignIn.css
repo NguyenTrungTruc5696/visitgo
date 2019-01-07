@@ -1,15 +1,19 @@
-@media all and (min-width: 480px) {
+@media all and (min-width: 580px) {
     .SignIn {
-      padding: 60px 0;
+      padding: 0;
     }
   
     .SignIn form {
-      margin: 0 auto;
-      max-width: 320px;
+      margin:auto;
     }
-    .SignIn form {
-    height: 300px;
-    width: 300px;
-    border: 2px solid lightblue;
+    
+    .SignIn form  {
+      height: 300px;
+      width: 500px;
+      }
+    .btn.btn-default {
+      max-width : 500px; 
+
     }
+    
   }

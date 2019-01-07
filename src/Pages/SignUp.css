@@ -1,20 +1,22 @@
-@media all and (min-width: 480px) {
+@media all and (min-width: 580px) {
     .SignUp {
-      padding: 60px 0;
+      padding: 0;
     }
   
     .SignUp form {
-      margin: 0 auto;
-      max-width: 320px;
-    }
-    .SignUp form {
-    height: 300px;
-    width: 300px;
-    }
-    .btn-default {
-        margin-top: 10px;
-        background-color: blue;
+      margin: auto;
+          }
+    .SignUp form  {
+      height: 200px;
+      width: 500px;
+      }
+      
+    .btn.btn-default {
+        width: 900px;
+        margin-bottom: 20px;
+        background-color: rgb(49, 49, 253);
         color : white;
+        background-image: none;
     }
-
+ 
   }
